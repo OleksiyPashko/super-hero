@@ -1,0 +1,47 @@
+.hero-list-container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .hero-list-container__table {
+        position: relative;
+        min-height: 200px;
+
+        &--loading-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 56px;
+            right: 0;
+            background: rgba(0, 0, 0, 0.15);
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .limit-reached {
+        max-width: 360px;
+        text-align: center;
+    }
+
+    &__search-inputs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    table {
+        width: 100%;
+        min-height: 200px;
+
+        .mat-column-actions {
+            text-align: end;
+        }
+    }
+
+    .mat-form-field {
+        font-size: 14px;
+        width: 30%;
+    }
+}

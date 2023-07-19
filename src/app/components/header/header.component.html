@@ -1,0 +1,30 @@
+<mat-toolbar class="header">
+    <span>Super Heroes App</span>
+    <button
+        (click)="changeSiteLanguage(SPANISH_LANGUAGE)"
+        *ngIf="siteLanguage.code === ENGLISH_LANGUAGE.code"
+        mat-icon-button
+        class="example-icon"
+        [attr.aria-label]="'changeLanguage' | translate"
+    >
+        <img
+            ngSrc="./assets/icons/usa.png"
+            alt="usa-flag"
+            fill
+        />
+    </button>
+
+    <button
+        (click)="changeSiteLanguage(ENGLISH_LANGUAGE)"
+        *ngIf="siteLanguage.code === SPANISH_LANGUAGE.code"
+        mat-icon-button
+        class="example-icon"
+        [attr.aria-label]="'changeLanguage' | translate"
+    >
+        <img
+            ngSrc="./assets/icons/spain.png"
+            alt="spain-flag"
+            fill
+        />
+    </button>
+</mat-toolbar>

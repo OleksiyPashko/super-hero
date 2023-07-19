@@ -1,0 +1,30 @@
+{
+    "filterByName": "Filtrar por Nombre",
+    "filterById": "Filtrar por Id",
+    "clearFilters": "Limpiar Filtros",
+    "createNewHero": "Crear Nueve Heroe",
+    "changeLanguage": "Cambiar de idioma",
+    "apiLimit": "Se ha alcanzado el límite de tasa de API. Se restablecerá en un minuto.",
+    "description": "Descripcion",
+    "Id": "ID",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "yes": "Yes",
+    "no": "No",
+    "nodataMatchingTheFilter": "No Datos con estos Filtros",
+    "areYourSure": "Estas Seguro?",
+    "ifYouClickYesRemove": "Si hace clic en sí, este héroe será eliminado",
+    "heroTable": {
+        "name": "NOMBRE",
+        "description": "DESCRIPCION"
+    },
+    "editHero": {
+        "name": "Nombre",
+        "nameIsRequired": "El Nombre es Requerido!",
+        "minLengths": "La longitud mínima es",
+        "maxLengths": "La longitud máxima es",
+        "saveSuperHero": "Guardar los cambios",
+        "createSuperHero": "Crear nuevo superhéroe"
+    }
+}

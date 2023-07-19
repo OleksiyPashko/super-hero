@@ -1,0 +1,30 @@
+{
+    "filterByName": "Filter By Name",
+    "filterById": "Filter By Id",
+    "clearFilters": "Clear Filters",
+    "createNewHero": "Create New Hero",
+    "changeLanguage": "Change Language",
+    "apiLimit": "API rate limit has been reached. It will be reset in one minute.",
+    "description": "Description",
+    "Id": "ID",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No",
+    "nodataMatchingTheFilter": "No data matching the filter",
+    "areYourSure": "Are you sure?",
+    "ifYouClickYesRemove": "If you click yes this hero will be removed",
+    "heroTable": {
+        "name": "NAME",
+        "description": "Description"
+    },
+    "editHero": {
+        "name": "Name",
+        "nameIsRequired": "Name is Required!",
+        "minLengths": " Minimum length is",
+        "maxLengths": " Max length is",
+        "saveSuperHero": "Save changes",
+        "createSuperHero": "Create New Super Hero"
+    }
+}

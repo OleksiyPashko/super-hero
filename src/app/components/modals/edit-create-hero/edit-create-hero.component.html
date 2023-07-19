@@ -1,0 +1,54 @@
+<form
+    [formGroup]="form"
+    class="form"
+>
+    <mat-form-field appearance="standard">
+        <mat-label>{{ 'editHero.name' | translate }}</mat-label>
+        <input
+            appInputUppercase
+            matInput
+            formControlName="name"
+        />
+        <mat-error *ngIf="form.get('name')?.hasError('required')">
+            {{ 'editHero.nameIsRequired' | translate }}
+        </mat-error>
+        <mat-error *ngIf="form.get('name')?.hasError('minlength')">
+            {{ 'editHero.minLengths' | translate }} {{ NAME_MIN_LENGTH }}!
+        </mat-error>
+        <mat-error *ngIf="form.get('name')?.hasError('maxlength')">
+            {{ 'editHero.maxLengths' | translate }} {{ NAME_MAX_LENGTH }}!
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+        <mat-label>{{ 'description' | translate }}</mat-label>
+        <textarea
+            matInput
+            formControlName="description"
+        ></textarea>
+        <mat-error *ngIf="form.get('description')?.hasError('maxlength')">
+            {{ 'editHero.maxLengths' | translate }} {{ DESCRIPTION_MAX_LENGTH }}!
+        </mat-error>
+    </mat-form-field>
+    <div class="form__buttons-container">
+        <button
+            class="form__buttons-container--button"
+            color="primary"
+            [disabled]="form.invalid"
+            type="submit"
+            (click)="id ? editSuperHero(id) : createSuperHero()"
+            mat-raised-button
+        >
+            {{ (id ? 'editHero.saveSuperHero' : 'editHero.createSuperHero') | translate }}
+        </button>
+        <button
+            class="form__buttons-container--button"
+            color="warn"
+            type="button"
+            (click)="cancel()"
+            mat-raised-button
+        >
+            {{ 'cancel' | translate }}
+        </button>
+    </div>
+</form>
