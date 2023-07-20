@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from '../../shared/services/local-storage/local-storage.service';
-import { EEnglishLanguage, ESpanishLanguage } from '../../models/header/models/enums/language.enum';
-import { ILanguage } from '../../models/header/models/interfaces/language.interface';
+import { ILanguage } from '../../models/interfaces/language.interface';
+import { EEnglishLanguage, ESpanishLanguage } from '../../models/enums/language.enum';
 
 const LANGUAGE_KEY: string = 'language';
 

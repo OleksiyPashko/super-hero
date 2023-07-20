@@ -7,7 +7,7 @@ import { SuperHeroHttpService } from '../../shared/services/super-hero-http/supe
 import { LocalStorageService } from '../../shared/services/local-storage/local-storage.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { ILanguage } from '../../models/header/models/interfaces/language.interface';
+import { ILanguage } from '../../models/interfaces/language.interface';
 
 describe('HeaderComponent', (): void => {
     let component: HeaderComponent;
